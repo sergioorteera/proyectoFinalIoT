@@ -1,0 +1,96 @@
+{% extends "template.html" %} {% block title %} Proyecto {% endblock %} {% block content %}
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+  body{
+    font: 400 14px/20px "Roboto", Helvetica, Arial, sans-serif;
+  }
+</style>
+
+<div class="container" style="text-align: justify;">
+  <div class="row mt-2">
+    <h2 class="text-center fw-bold my-5" style="color: #2A8947">Proyecto</h2>
+    <p>
+      Durante nuestro diario vivir nos enfrentamos a diferentes riesgos, muchos
+      de ellos tanto visibles como tangibles a los cuales podemos tomar
+      decisiones para minimizarlos e incluso evitarlos, pero existen otros que
+      pueden generar un gran impacto en nuestra salud que no somos capaces de
+      percibirlos fácilmente o incluso llegan a ser completamente imperceptible.
+      Gran parte de los problemas de la contaminación atmosférica son
+      consecuencia del rápido y desordenado crecimiento urbano y de la
+      industrialización, fenómenos que muchas veces no van acompañados de
+      programas cuyo objetivo sea proteger el medio ambiente. El desarrollo
+      inesperado de la ciudad pronuncia un mayor uso de los recursos naturales,
+      la energía eléctrica y los combustibles fósiles, por ende una mayor
+      generación de contaminación atmosférica y problemas en la salud pública.
+    </p>
+    <p>
+      La contaminación del aire tiene su origen en fuentes de emisiones fijas,
+      móviles y naturales, en cuanto a las fuentes móviles la fuente principal
+      de contaminación del aire son los vehÌculos uno de los aspectos que en la
+      ciudad de popayán ha ido en auge por lo que esto traería efectos negativos
+      en la salud de los ciudadanos, sin embargo, las industrias en sus procesos
+      productivos también realizan importantes emisiones al aire derivadas de
+      actividades de transformación lo que ha tenido una incidencia importante
+      en el deterioro de la calidad del aire de la ciudad. Ante lo mencionado
+      anteriormente se ha decidido crear un dispositivo con un sistema que
+      permita informar al usuario acerca de los riesgos de polución presente en
+      el sitio o entorno donde está presente, tomando como referencia un índice
+      propuesto por el Instituto de Hidrología, Meteorología y Estudios
+      Ambientales de Colombia (IDEAM).
+    </p>
+    <p>
+      El índice de calidad del aire (ICA) nos notifica el grado de pureza o
+      contaminación atmosférica, dentro de este se definen 6 categorías de
+      calidad del aire; este usa una regla que va de 0 a 500, queriendo decir
+      que en cuanto más alto es el valor de ICA, mayor será la contaminación del
+      aire, por ende será más perjudicial para la salud. El ICA se divide en 6
+      estados y cada uno se representa en un color diferente, un nivel para la
+      salud y el índice de la calidad del aire.
+    </p>
+  </div>
+  <div class="row mt-2 p-5">
+    <table class="table text-center fw-bold">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">Color</th>
+          <th scope="col">Nivel para la salud</th>
+          <th scope="col">Indice de calidad del aire (ICA)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background: #63AE57">
+          <td>Verde</td>
+          <td>Buena para la salud</td>
+          <td>0 - 50</td>
+        </tr>
+        <tr style="background: #FFFF00">
+          <td>Amarillo</td>
+          <td>Moderada</td>
+          <td>51 - 100</td>
+        </tr>
+        <tr style="background: #FF6600">
+          <td>Naranja</td>
+          <td>Dañina a la salud para grupos sensibles</td>
+          <td>101 - 150</td>
+        </tr>
+        <tr class="text-white" style="background: #FF0000">
+          <td>Rojo</td>
+          <td>Dañina a la salud</td>
+          <td>151 - 200</td>
+        </tr>
+        <tr class="text-white" style="background: #8A3D92">
+          <td>Morado</td>
+          <td>Muy dañina a la salud</td>
+          <td>201 - 300</td>
+        </tr>
+        <tr class="text-white" style="background: #950022">
+          <td>Marrón</td>
+          <td>Peligrosa</td>
+          <td>> 300</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

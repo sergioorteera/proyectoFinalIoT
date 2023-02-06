@@ -1,0 +1,176 @@
+{% extends "template.html" %} {% block title %} Producto {% endblock %} 
+
+{% block content %}
+<div class="container">
+  <div>
+    <h2 class="text-center fw-bold my-5" style="color: #2a8947">Producto</h2>
+    {% if dato > 0 and  dato < 50 %}
+      <div class="barraTemp" style="transform: rotate(10deg);">
+          <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+          <div class="cont" style="background-color: rgb(99,174,87);"></div>  
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 style="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+    {% if dato > 51 and  dato < 100 %}
+      <div class="barraTemp" style="transform: rotate(40deg);">
+      <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+      <div class="cont" style="background-color: rgb(255,255,0);"></div>  
+          
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 tyle="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+    {% if dato > 101 and  dato < 150 %}
+      <div class="barraTemp" style="transform: rotate(70deg);">
+          <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+          <div class="cont" style="background-color: rgb(255,102,0);"></div>  
+          
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 style="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+    {% if dato > 151 and  dato < 200 %}
+      <div class="barraTemp" style="transform: rotate(100deg);">
+          <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+          <div class="cont" style="background-color: rgb(255,0,0);"></div>  
+          
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 style="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+    {% if dato > 201 and  dato < 300 %}
+      <div class="barraTemp" style="transform: rotate(130deg);">
+          <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+          <div class="cont" style="background-color: rgb(138,61,146);"></div>  
+          
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 style="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+    {% if dato > 300 %}
+      <div class="barraTemp" style="transform: rotate(180deg);">
+          <div class="cont" style="background-color: rgb(143, 136, 136);"></div>
+          <div class="cont" style="background-color: rgb(149,0,34);"></div>  
+          
+      </div>
+      <div class="circulo_centro"></div>
+      <div class="rectangulo"></div>
+      <h1 style="font-size: 22px; position: relative; margin: -125px auto 50px;">{{dato}} PPM</h1>
+    {% endif %}
+  </div>
+  {% comment %} <div class="row m-5">
+    <iframe
+      width="450"
+      height="320"
+      style="border: 1px solid #cccccc"
+      src="https://thingspeak.com/channels/2013672/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+    ></iframe>
+  </div> {% endcomment %}
+  <div class="row m-5">
+    <h1>Indice de calidad del aire (ICA)</h1>
+    <p>
+      El valor del índice de la calidad del aire ICA se mide en una escala que va desde  0 y >500 y que establece seis categorías de peligrosidad, de modo que cuanto mayor sea el índice, peor será la calidad del aire.
+      A nivel cualitativo, el rango del ICA está dividido en seis tramos: 
+      <ul>
+        <li>Buena: Color verde (ICA de 0 a 50)</li>
+        <li>Moderada: Color amarillo (ICA de 51 a 100)</li>
+        <li>Dañina a la salud para grupos sensibles: Color naranja (ICA de 101 a 150)</li>
+        <li>Dañina a la salud: Color rojo (ICA 151 a 200)</li>
+        <li>Muy dañina a la salud: Color morado (ICA 201 a 300)</li>
+        <li>Peligrosa: Color marrón (ICA superior a 300)</li>
+      </ul>
+    </p>
+  </div>
+  <div class="row mx-5 mt-4">
+    <h2 class="fw-bold my-5 text-center" style="color: #2a8947">
+      Funcionamiento
+    </h2>
+    <iframe
+      width="560"
+      height="460"
+      src="https://www.youtube.com/embed/PZhRtWQXbjI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="row mx-5 mt-4" style="text-align: justify">
+    <h4 class="fw-bold">Hardware</h4>
+    <div class="col-6">
+      <p>
+        Protoboard: Las protoboard son una herramienta fundamental en el ámbito de la electrónica. Básicamente, es una caja de plástico con orificios conectados entre sí, que permite crear un circuito sin necesidad de soldar cables o componentes. También se llaman
+        breadboards o placa de circuitos. Son estupendas para diseñar y testear tus circuitos antes de lanzarte a fabricar un circuito impreso permanente(PCB).Para que el circuito funcione sobre una protoboard, tan solo se tienen que insertar los componentes
+        en los pequeños orificios de contacto y unirlos con cables. Como los componentes no están soldados se puede cambiar el diseño de los circuitos siempre que se requiera.
+    </p>
+    </div>
+    <div class="col-6 text-center">
+      <img src="../static/img/protoboard.jpg" alt="..." height="250px" />
+      <h6>Img. Protoboard</h6>
+    </div>
+  </div>
+  <div class="row mx-5 mt-4">
+    <div class="col-6">
+      One of three columns
+    </div>
+    <div class="col-6">
+      <p>
+        Fuente para protoboard: Este módulo posee salidas de 3.3V y 5V, posee un regulador para cada voltaje, Estos voltajes se seleccionan con jumpers. La entrada de voltaje al módulo puede ser por el conector Jack o a través del conector USB. Si se usa el conector
+        Jack, el conector USB se puede utilizar como salida de 5V. Permite alimentar un protoboard mediante plug a un transformador de pared hasta 12v. Proporciona dos salidas independientes que son seleccionables mediante jumpers y permiten suministrar 5V
+        o 3.3V. Cuenta además con salida de 5V por conector USB.
+    </p>
+    </div>
+  </div>
+  
+</div>
+
+<style>
+  body {
+      font-family: monospace;
+      background-color: rgb(255,255, 255);
+  }
+
+  .barraTemp{
+      height: 200px;
+      width: 200px;
+      margin: auto;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .cont{
+      height: 100px;
+      width: 200px;
+  }
+  .circulo_centro {
+      width: 150px;
+      height: 150px;
+      background-color: rgb(255,255, 255);
+      border-radius: 50%;
+      margin: auto;
+      position: relative;
+      margin: -175px auto 50px;
+  }
+  .rectangulo{
+      width: 200px;
+      height: 100px;
+      background-color: rgb(255,255, 255);
+      position: relative;
+      margin: -125px auto 50px;
+  }
+  h1 {
+    color: #333333;
+    text-align: center;
+    margin: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+</style>
+
+
+{% endblock %}
